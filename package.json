@@ -1,0 +1,28 @@
+{
+  "name": "weight-balance-element",
+  "version": "0.0.4",
+  "description": "Airplane weight and balance form with chart",
+  "main": "dist/index.js",
+  "author": "Chris Nelson",
+  "license": "MIT",
+  "scripts": {
+    "prepublish": "webpack",
+    "build": "webpack",
+    "watch": "webpack --watch",
+    "start": "live-server ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/superchris/weight-balance-element.git"
+  },
+  "dependencies": {
+    "live-server": "^1.2.0",
+    "plotly.js": "^1.38.0",
+    "wc-fluxish": "^0.0.2",
+    "webpack": "^4.9.1"
+  },
+  "devDependencies": {
+    "@webcomponents/webcomponentsjs": "^2.1.1",
+    "webpack-cli": "^3.1.1"
+  }
+}
