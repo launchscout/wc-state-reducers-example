@@ -3,7 +3,7 @@ import WbTotalWeight from './wb-total-weight';
 
 customElements.define('wb-station', WbStation);
 customElements.define('wb-total-weight', WbTotalWeight);
-import { connect } from 'wc-fluxish';
+import { createStore } from 'wc-state-reducers';
 
 const weightChange = (state, { station, weight }) => {
   const stations = Object.assign(state.stations || {}, {
@@ -21,4 +21,4 @@ const subscribers = {
   }
 }
 
-connect({ weightChange }, subscribers);
+window.store = createStore(document, { weightChange }, subscribers);

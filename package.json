@@ -18,7 +18,7 @@
   "dependencies": {
     "live-server": "^1.2.0",
     "plotly.js": "^1.38.0",
-    "wc-fluxish": "^0.0.2",
+    "wc-state-reducers": "0.0.3",
     "webpack": "^4.9.1"
   },
   "devDependencies": {

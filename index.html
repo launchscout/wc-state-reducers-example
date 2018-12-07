@@ -4,12 +4,26 @@
   <script src="./dist/index.js"></script>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
   <style>
-
+    .container {
+      display: grid;
+      width: 600px;
+    }
+    wb-total-weight {
+      grid-column: 1 / 2;
+    }
+    wb-station {
+      grid-column: 1 / 2;
+    }
+    label {
+      width: 30%;
+    }
   </style>
 </head>
 <body>
+  <div class="container">
     <wb-total-weight></wb-total-weight>
-    <wb-station name="Front Set" arm="39"></wb-station>
+    <wb-station name="Front Seat" arm="39"></wb-station>
     <wb-station name="Baggage Area" arm="64"></wb-station>
+  </div>
 </body>
 </html>
