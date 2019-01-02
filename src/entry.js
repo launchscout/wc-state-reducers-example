@@ -1,8 +1,11 @@
 import WbStation from './wb-station.js';
 import WbTotalWeight from './wb-total-weight';
+import WbFuel from './wb-fuel';
 
 customElements.define('wb-station', WbStation);
 customElements.define('wb-total-weight', WbTotalWeight);
+customElements.define('wb-fuel', WbFuel);
+
 import { createStore } from 'wc-state-reducers';
 
 const weightChange = (state, { station, weight }) => {

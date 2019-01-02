@@ -23,6 +23,7 @@
   },
   "devDependencies": {
     "@open-wc/testing-helpers": "^0.5.1",
+    "@webcomponents/webcomponentsjs": "^2.1.1",
     "chai": "^4.1.2",
     "karma": "^3.0.0",
     "karma-chrome-launcher": "^2.2.0",
@@ -32,7 +33,6 @@
     "lit-html": "^0.14.0",
     "live-server": "^1.2.0",
     "mocha": "^5.2.0",
-    "@webcomponents/webcomponentsjs": "^2.1.1",
     "webpack-cli": "^3.1.1"
   }
 }
