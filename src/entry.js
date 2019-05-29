@@ -15,10 +15,11 @@ const weightChange = (state, { station, weight }) => {
   return Object.assign(state, { stations, totalWeight });
 };
 
-const subscribers = {
-  "wb-total-weight": ({ totalWeight }, element) => {
-    element.setAttribute("weight", totalWeight);
+window.store = createStore(document, { weightChange });
+window.store.subscribe(({totalWeight}) => {
+  const wbTotalWeight = document.querySelector("wb-total-weight");
+  if (wbTotalWeight) {
+    wbTotalWeight.setAttribute('weight', totalWeight)
   }
-}
+});
 
-window.store = createStore(document, { weightChange }, subscribers);

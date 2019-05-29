@@ -18,7 +18,7 @@
   },
   "dependencies": {
     "plotly.js": "^1.38.0",
-    "wc-state-reducers": "0.0.3",
+    "wc-state-reducers": "0.0.5",
     "webpack": "^4.9.1"
   },
   "devDependencies": {
